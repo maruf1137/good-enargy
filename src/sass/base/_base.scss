@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	text-transform: capitalize;
+}
+// ::selection {
+// 	background: $color-text;
+// 	color: #fff;
+// }
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+	@media only screen and (max-width: $laptop-land) {
+		font-size: 55%;
+	}
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 2rem;
+	font-weight: 400;
+	color: $color-white;
+	overflow-x: hidden;
+	background-color: $color-white;
+}
+
+.section,
+.footer {
+	padding: 8rem 0 !important;
+
+	@media only screen and (max-width: $tab-land) {
+		padding: 4rem 0 !important;
+	}
+}

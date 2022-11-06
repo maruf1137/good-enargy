@@ -1,0 +1,143 @@
+h1.heading,
+h2.heading {
+	font-weight: 800;
+	font-size: 9rem;
+	line-height: 0.9em;
+	color: $color-white;
+	letter-spacing: -3px;
+	text-shadow: 2px 2px 12px rgb(0 0 0 / 43%);
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 4.5rem;
+	// }
+	// @media only screen and (max-width: $mbl-port) {
+	// 	font-size: 3.5rem;
+	// }
+}
+
+h3.heading {
+	font-size: 5rem;
+	line-height: 5.4rem;
+	color: $color-primary;
+	color: #fff;
+	font-weight: 800;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+}
+
+h3.heading,
+.h3-60px,
+.h3-45px {
+	font-size: 5rem;
+	color: #fff;
+	font-weight: 800;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+}
+
+h3.h3-60px {
+	font-size: 6rem;
+}
+h3.h3-45px {
+	font-size: 4.5rem;
+}
+
+h4.heading {
+	font-size: 3.1rem;
+	color: $color-black;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	font-weight: 500;
+}
+h5.heading {
+	font-size: 2.2rem;
+	color: #000;
+	text-transform: uppercase;
+	line-height: 1.3em;
+	font-family: 'Barlow', Sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	letter-spacing: 0px;
+}
+
+.text {
+	font-size: 2rem;
+	color: $color-black;
+	font-weight: 400;
+	font-family: $font-primary;
+	// text-transform: capitalize;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 1.6rem;
+	// }
+	// @media only screen and (max-width: $mbl-small) {
+	// 	line-height: 1.2rem;
+	// }
+}
+
+a:link,
+a:visited {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: $color-white;
+
+	@media only screen and (max-width: $laptop-port) {
+		font-size: 1.6rem;
+	}
+}
+
+// Typography utils
+
+.bold {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.icon {
+	height: 3rem;
+	width: 3rem;
+	fill: $color-white;
+}
+
+.white {
+	color: $color-white !important;
+}
+.black {
+	color: $color-black !important;
+}
+.primary-color {
+	color: $color-primary !important;
+}
+
+@mixin pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin img-size {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin icon-vector {
+	height: 2rem;
+	width: 2rem;
+}
