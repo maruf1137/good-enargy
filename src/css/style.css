@@ -20,14 +20,30 @@ html {
     font-size: 55%;
   }
 }
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   color: #fff;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 62em) {
+  .container {
+    padding: 0 4rem !important;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .container {
+    padding: 0 2rem !important;
+  }
 }
 
 .section,
@@ -49,6 +65,19 @@ h2.heading {
   color: #fff;
   letter-spacing: -3px;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.43);
+  font-family: "Futura Condensed PT", sans-serif;
+}
+@media only screen and (max-width: 62em) {
+  h1.heading,
+h2.heading {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h1.heading,
+h2.heading {
+    font-size: 5rem;
+  }
 }
 
 h3.heading {
@@ -59,6 +88,17 @@ h3.heading {
   font-weight: 800;
   line-height: 1.1em;
   letter-spacing: -1px;
+  font-family: "Futura Condensed PT", sans-serif;
+}
+@media only screen and (max-width: 62em) {
+  h3.heading {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h3.heading {
+    font-size: 3.6rem !important;
+  }
 }
 
 h3.heading,
@@ -69,14 +109,35 @@ h3.heading,
   font-weight: 800;
   line-height: 1.1em;
   letter-spacing: -1px;
+  font-family: "Futura Condensed PT", sans-serif;
 }
 
 h3.h3-60px {
   font-size: 6rem;
 }
+@media only screen and (max-width: 62em) {
+  h3.h3-60px {
+    font-size: 4.8rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h3.h3-60px {
+    font-size: 3.6rem;
+  }
+}
 
 h3.h3-45px {
   font-size: 4.5rem;
+}
+@media only screen and (max-width: 62em) {
+  h3.h3-45px {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h3.h3-45px {
+    font-size: 3rem;
+  }
 }
 
 h4.heading {
@@ -85,6 +146,16 @@ h4.heading {
   line-height: 1.1em;
   letter-spacing: -1px;
   font-weight: 500;
+}
+@media only screen and (max-width: 62em) {
+  h4.heading {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h4.heading {
+    font-size: 2.2rem;
+  }
 }
 
 h5.heading {
@@ -96,31 +167,45 @@ h5.heading {
   font-weight: 800;
   font-style: italic;
   letter-spacing: 0px;
+  font-family: "Barlow", sans-serif;
+}
+@media only screen and (max-width: 62em) {
+  h5.heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h5.heading {
+    font-size: 1.8rem;
+  }
 }
 
 .text {
   font-size: 2rem;
   color: #000;
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a:link,
 a:visited {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
   color: #fff;
-}
-@media only screen and (max-width: 64em) {
-  a:link,
-a:visited {
-    font-size: 1.6rem;
-  }
+  font-family: "Raleway", sans-serif;
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 800 !important;
+}
+
+.regular {
+  font-weight: 800 !important;
+}
+
+.semi-bold {
+  font-weight: 800 !important;
 }
 
 .center {
@@ -1207,27 +1292,19 @@ button {
 }
 
 .btn {
-  padding: 0.8rem 3.5rem;
-  font-size: 1.8rem;
-  border: 1px solid #fff;
-  text-transform: capitalize;
-  transition: all 0.3s;
-}
-@media only screen and (max-width: 62em) {
-  .btn {
-    font-size: 1.4rem;
-  }
-}
-
-.btn-login,
-.btn-logout {
+  padding: 2rem 4rem;
+  border: none;
+  font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  font-weight: bold;
   color: #fff;
-  background-color: transparent;
+  letter-spacing: -1px;
+  transition: all 0.3s;
+  line-height: 1;
 }
-.btn-login:hover,
-.btn-logout:hover {
-  color: #000;
-  background-color: #fff;
+.btn:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .nav {
@@ -1240,6 +1317,11 @@ button {
   background: black;
   z-index: 12;
 }
+@media only screen and (max-width: 62em) {
+  .nav {
+    padding: 1rem 4rem;
+  }
+}
 .nav__img {
   height: 4rem;
   min-width: 17rem;
@@ -1248,7 +1330,7 @@ button {
   height: 100%;
   width: 100%;
 }
-.nav__link {
+.nav-link {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1257,96 +1339,48 @@ button {
   line-height: 2.4rem;
   letter-spacing: 0px;
   transition: all 0.3s;
-  padding: 0.1rem 1.4rem;
+  padding: 0.1rem 1.4rem !important;
   border-top: 2px solid transparent;
+  color: #fff !important;
 }
-.nav__link:hover,
+.nav-link:hover,
 .nav .active {
   color: #d60700;
   border-top: 2px solid #d60700;
 }
-.nav .nav__right {
-  gap: 2.5rem;
-}
-.nav .nav__right .contact .icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  fill: #fff;
-}
-@media only screen and (max-width: 62em) {
-  .nav .nav__right {
-    display: none !important;
-  }
-}
-.nav .line {
-  height: 6.4rem;
-  width: 1px;
-  background-color: #fff;
-}
 
-.btn-sidebar .icon {
-  height: 3.5rem;
-  width: 3.5rem;
-  fill: #fff;
-}
-
-.btn-open-sidebar {
-  position: fixed;
-  top: 3.5rem;
-  right: 1rem;
-  display: none;
-  background-color: transparent;
-}
-@media only screen and (max-width: 62em) {
-  .btn-open-sidebar {
-    display: block;
-  }
-}
-
-.btn-close-sidebar {
-  position: absolute;
-  top: 3.5rem;
-  right: 1rem;
-  background-color: transparent;
-}
-
-.mbl-bar {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 60%;
+.dropdown-menu {
   background-color: #000;
-  z-index: 10;
-  padding-top: 8rem;
-  transform: translateX(-100%);
-  transition: all 0.5s;
 }
-@media only screen and (max-width: 35.9375em) {
-  .mbl-bar {
-    width: 100%;
-  }
-}
-.mbl-bar .nav__list {
-  display: none !important;
-  gap: 2.4rem;
-}
-@media only screen and (max-width: 62em) {
-  .mbl-bar .nav__list {
-    display: flex !important;
-  }
-}
-.mbl-bar .nav__right {
-  display: none !important;
-}
-@media only screen and (max-width: 62em) {
-  .mbl-bar .nav__right {
-    display: flex !important;
-  }
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #fff;
 }
 
-.show-mbl-bar {
-  transform: translateX(0);
+.dropdown-item {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+.dropdown-item:hover {
+  background-color: #000;
+  color: #d60700;
+}
+
+@media only screen and (max-width: 62em) {
+  .navbar-collapse {
+    padding-top: 2rem;
+  }
+}
+.navbar-collapse .navbar-nav {
+  gap: 1rem;
+}
+.navbar-collapse .navbar-nav .nav-link {
+  display: inline-block;
+  padding: 0.4rem 2rem !important;
+}
+
+.navbar-toggler {
+  background-color: #fff;
 }
 
 .footer__logo {
@@ -1415,7 +1449,7 @@ button {
   position: relative;
   z-index: 10;
 }
-.header__content__video {
+.header__video {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -1424,7 +1458,7 @@ button {
   left: 0;
   z-index: 5;
 }
-.header__content .overlay {
+.header .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1433,17 +1467,52 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   z-index: 4;
 }
-.header__content .myVideo {
+.header .myVideo {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
 }
+@media only screen and (max-width: 75em) {
+  .header .myVideo {
+    width: 110%;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .header .myVideo {
+    width: 145%;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .header .myVideo {
+    width: 200%;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .header .myVideo {
+    width: 285%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .header .myVideo {
+    width: 310%;
+  }
+}
 .header__btns .btn {
   padding: 2rem 4rem;
   border: none;
   font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: -1px;
+  transition: all 0.3s;
+  line-height: 1;
+}
+.header__btns .btn:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 .header__btn--1 {
   background-color: #0e00ee;
@@ -1469,6 +1538,9 @@ button {
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0% 50%);
 }
+.about-section {
+  background-color: #fff;
+}
 .about-section .about__img img {
   height: 100%;
   width: 100%;
@@ -1484,6 +1556,118 @@ button {
 .about-section .about__content h2 {
   color: #000;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0);
+}
+.about-section .seen {
+  background-color: #ededed;
+  padding: 3rem 0 6rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0% 50%);
+}
+.about-section .seen h3 {
+  text-align: center;
+  color: #000;
+}
+.about-section .seen__item {
+  max-width: 65rem;
+  height: 13rem;
+  width: 13rem;
+}
+.about-section .seen__item img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.37;
+  filter: brightness(100%) contrast(149%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+
+.income-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/income-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -15rem;
+  padding-top: 25rem !important;
+  position: relative;
+}
+
+.section-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-box {
+  padding: 2rem;
+  background-color: #fff;
+  display: inline-block;
+  max-width: 50rem;
+  transform: skew(0deg, -5deg) translateX(-50%);
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  z-index: 2;
+}
+
+.income__list {
+  gap: 4rem 8rem;
+}
+.income__content h3 {
+  color: #fff;
+}
+.income__content h2 {
+  color: #0e00ee;
+}
+.income__content .btn {
+  font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  background-color: #0e00ee;
+}
+.income__img {
+  height: 100%;
+  width: 100%;
+}
+.income__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.roadmap-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/roadmap-bg.png");
+  padding: 0 !important;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%, 0% 50%);
+}
+.roadmap-section .income__content {
+  padding: 12rem 0;
+}
+.roadmap-section h2 {
+  color: #d60700;
+}
+.roadmap-section .btn {
+  font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  background-color: #d60700;
+}
+
+.own-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/own-bg.png");
+  padding: 0 !important;
+  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 0 100%);
+}
+.own-section .income__content {
+  padding: 12rem 0;
+}
+.own-section h2 {
+  color: #ff5e01;
+}
+.own-section .btn {
+  font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  background-color: #ff5e01;
+}
+.own-section .section-box {
+  transform: skew(0deg, 5deg) translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

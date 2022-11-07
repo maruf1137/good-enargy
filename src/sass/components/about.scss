@@ -1,4 +1,5 @@
 .about-section {
+	background-color: $color-white;
 	.about {
 		&__img {
 			img {
@@ -19,4 +20,31 @@
 			}
 		}
 	}
+
+	.seen {
+		background-color: #ededed;
+		padding: 3rem 0 6rem 0;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0% 50%);
+
+		h3 {
+			text-align: center;
+			color: $color-black;
+		}
+
+		&__list {
+		}
+
+		&__item {
+			max-width: 65rem;
+			height: 13rem;
+			width: 13rem;
+			img {
+				@include img-size;
+				opacity: 0.37;
+				filter: brightness(100%) contrast(149%) saturate(0%) blur(0px) hue-rotate(0deg);
+			}
+		}
+	}
 }
+
+// "Barlow",Sans-serif

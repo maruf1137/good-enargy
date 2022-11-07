@@ -1,0 +1,106 @@
+.income-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)),
+		url('../img/income-bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: -15rem;
+	padding-top: 25rem !important;
+	position: relative;
+}
+
+.section-bg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	position: relative;
+}
+
+.section-box {
+	padding: 2rem;
+	background-color: $color-white;
+	display: inline-block;
+	max-width: 50rem;
+	transform: skew(0deg, -5deg) translateX(-50%);
+	position: absolute;
+	bottom: -5rem;
+	left: 50%;
+	z-index: 2;
+}
+
+.income {
+	&__list {
+		gap: 4rem 8rem;
+	}
+
+	&__content {
+		h3 {
+			color: $color-white;
+		}
+
+		h2 {
+			color: $color-primary;
+		}
+
+		.btn {
+			font-size: 3rem;
+			font-family: $font-tirtiary;
+			background-color: $color-primary;
+		}
+	}
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		img {
+			@include img-size;
+		}
+	}
+}
+
+.roadmap-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)),
+		url('../img/roadmap-bg.png');
+	padding: 0 !important;
+	clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%, 0% 50%);
+
+	.income__content {
+		padding: 12rem 0;
+	}
+	h2 {
+		color: $color-secondary;
+	}
+
+	.btn {
+		font-size: 3rem;
+		font-family: $font-tirtiary;
+		background-color: $color-secondary;
+	}
+}
+
+.own-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)),
+		url('../img/own-bg.png');
+	padding: 0 !important;
+	clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 0 100%);
+
+	.income__content {
+		padding: 12rem 0;
+	}
+	h2 {
+		color: $color-tirtiary;
+	}
+
+	.btn {
+		font-size: 3rem;
+		font-family: $font-tirtiary;
+		background-color: $color-tirtiary;
+	}
+
+	.section-box {
+		transform: skew(0deg, 5deg) translateX(-50%);
+	}
+}

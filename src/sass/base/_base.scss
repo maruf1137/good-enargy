@@ -22,6 +22,9 @@ html {
 	@media only screen and (max-width: $laptop-land) {
 		font-size: 55%;
 	}
+	@media only screen and (max-width: $tab-land) {
+		font-size: 50%;
+	}
 }
 
 body {
@@ -30,7 +33,16 @@ body {
 	font-weight: 400;
 	color: $color-white;
 	overflow-x: hidden;
-	background-color: $color-white;
+	background-color: $color-black;
+}
+
+.container {
+	@media only screen and (max-width: $tab-land) {
+		padding: 0 4rem !important;
+	}
+	@media only screen and (max-width: $mbl-port) {
+		padding: 0 2rem !important;
+	}
 }
 
 .section,

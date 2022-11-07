@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Futura Condensed PT';
+    src: url('FuturaCondensedPT-Bold.woff2') format('woff2'),
+        url('FuturaCondensedPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Condensed PT';
+    src: url('FuturaCondensedPT-ExtraBold.woff2') format('woff2'),
+        url('FuturaCondensedPT-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
