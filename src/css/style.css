@@ -1323,8 +1323,7 @@ button {
   }
 }
 .nav__img {
-  height: 4rem;
-  min-width: 17rem;
+  height: 6rem;
 }
 .nav__img img {
   height: 100%;
@@ -1540,10 +1539,18 @@ button {
 }
 .about-section {
   background-color: #fff;
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 62em) {
+  .about-section .about__img {
+    height: 55rem;
+  }
 }
 .about-section .about__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .about-section .about__content {
   text-align: right;
@@ -1561,6 +1568,9 @@ button {
   background-color: #ededed;
   padding: 3rem 0 6rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0% 50%);
+  margin-bottom: -15rem;
+  position: relative;
+  z-index: 2;
 }
 .about-section .seen h3 {
   text-align: center;
@@ -1584,8 +1594,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -15rem;
-  padding-top: 25rem !important;
+  padding: 15rem 0 0 0 !important;
   position: relative;
 }
 
@@ -1612,6 +1621,15 @@ button {
 
 .income__list {
   gap: 4rem 8rem;
+  align-items: stretch !important;
+}
+.income__content {
+  padding: 12rem 0;
+}
+@media only screen and (max-width: 62em) {
+  .income__content {
+    padding: 6rem 0;
+  }
 }
 .income__content h3 {
   color: #fff;
@@ -1631,15 +1649,14 @@ button {
 .income__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .roadmap-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/roadmap-bg.png");
-  padding: 0 !important;
+  padding: 8rem 0 0 0 !important;
   clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%, 0% 50%);
-}
-.roadmap-section .income__content {
-  padding: 12rem 0;
 }
 .roadmap-section h2 {
   color: #d60700;
@@ -1668,6 +1685,160 @@ button {
 }
 .own-section .section-box {
   transform: skew(0deg, 5deg) translateX(-50%);
+}
+
+.review-section {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
+  margin-bottom: -5rem;
+  background-color: #000;
+  position: relative;
+  z-index: 2;
+}
+
+.review {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url("../img/review-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 16rem 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review__list {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+.review__item iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.vlog-section {
+  background-color: #fff;
+  padding-top: 15rem !important;
+  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
+}
+.vlog-section .vlog__img {
+  height: 100%;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: -5rem;
+}
+.vlog-section .vlog__img img {
+  height: 100%;
+  width: 100%;
+}
+.vlog-section .vlog__content h3 {
+  color: #000;
+  margin-top: 2rem;
+}
+.vlog-section .vlog__content .btn {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+.vlog-section .video-slider {
+  height: 23rem;
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.vlog-section .video-slider .btn-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.vlog-section .video-slider .btn-video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  color: #fff;
+}
+.vlog-section .video-slider .btn-video .bi {
+  height: auto;
+  width: auto;
+}
+.vlog-section .video-slider .swiper-button-prev:after,
+.vlog-section .video-slider .swiper-button-next:after {
+  display: none;
+}
+.vlog-section .video-slider .swiper-button-prev i,
+.vlog-section .video-slider .swiper-button-next i {
+  color: #333;
+}
+.vlog-section .video-slider .swiper-pagination-bullet-active {
+  background: #000;
+}
+.vlog-section .video-slider .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  transform: translateY(1rem);
+}
+.vlog-section .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+.vlog-section .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.vlog-section .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-section {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
+  position: relative;
+  z-index: 2;
+}
+.social-section .social .btn-youtube .social__nav {
+  background-color: red;
+}
+.social-section .social .btn-instagram .social__nav {
+  background-image: linear-gradient(150deg, #feda77 0%, #dd2a7b 100%);
+}
+.social-section .social .btn-facebook .social__nav {
+  background-color: #1877f2;
+}
+.social-section .social .btn-tiktok .social__nav {
+  background-color: #ee1d52;
+}
+.social-section .social__item {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0;
+}
+.social-section .social__nav {
+  padding: 1.4rem 0;
+  margin-bottom: -1rem !important;
+}
+.social-section .social__nav i {
+  font-size: 3rem;
+}
+.social-section .social__content {
+  padding: 2rem 1rem;
+}
+.social-section .social__content h3 {
+  color: #000;
+}
+.social-section .social__content .like {
+  font-size: 6.9rem;
+}
+.social-section .social__content .text {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.68421;
 }
 
 /*# sourceMappingURL=style.css.map */

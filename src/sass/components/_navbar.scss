@@ -1,6 +1,5 @@
 .nav {
 	padding: 1rem 8rem;
-	// border-bottom: 1px solid rgba(255, 255, 255, 0.516);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -14,31 +13,14 @@
 	}
 
 	&__img {
-		height: 4rem;
-		min-width: 17rem;
+		height: 6rem;
+		// min-width: 17rem;
 
 		img {
 			@include img-size;
 		}
 	}
 
-	&__list {
-		// gap: 5.4rem;
-
-		// @media only screen and (max-width: $tab-land) {
-		// 	position: fixed;
-		// 	top: 0;
-		// 	right: 0;
-		// 	height: 100%;
-		// 	width: 60%;
-		// 	background: black;
-		// 	flex-direction: column;
-		// 	justify-content: start;
-		// 	gap: 2rem;
-		// 	padding-top: 10rem;
-		// 	transform: translate(100%);
-		// }
-	}
 	&-link {
 		font-size: 1.5rem;
 		font-weight: 600;

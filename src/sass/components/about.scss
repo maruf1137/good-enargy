@@ -1,9 +1,17 @@
 .about-section {
 	background-color: $color-white;
+	margin-top: 6rem;
+
 	.about {
 		&__img {
+			@media only screen and (max-width: $tab-land) {
+				height: 55rem;
+				// height: 100%;
+			}
 			img {
 				@include img-size;
+				object-fit: cover;
+				object-position: top center;
 			}
 		}
 
@@ -25,6 +33,9 @@
 		background-color: #ededed;
 		padding: 3rem 0 6rem 0;
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0% 50%);
+		margin-bottom: -15rem;
+		position: relative;
+		z-index: 2;
 
 		h3 {
 			text-align: center;

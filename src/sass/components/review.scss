@@ -1,0 +1,32 @@
+.review-section {
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
+	margin-bottom: -5rem;
+	background-color: $color-black;
+	position: relative;
+	z-index: 2;
+}
+
+.review {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)),
+		url('../img/review-bg.png');
+	// min-height: 55rem;
+	background-size: cover;
+	background-position: center;
+	padding: 16rem 0;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__list {
+		max-width: 52rem;
+		margin: 0 auto;
+	}
+
+	&__item {
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
