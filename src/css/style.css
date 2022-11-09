@@ -1437,6 +1437,8 @@ button {
   position: relative;
   padding-top: 6rem;
   min-height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%, 0% 50%);
+  margin-bottom: -14rem;
 }
 .header__content {
   height: 70vh;
@@ -1542,7 +1544,7 @@ button {
 }
 .about-section {
   background-color: #fff;
-  margin-top: 6rem;
+  padding-top: 18rem !important;
 }
 @media only screen and (max-width: 62em) {
   .about-section .about__img {
@@ -1686,7 +1688,7 @@ button {
   position: absolute;
   bottom: -5rem;
   left: 50%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .income__list {
@@ -1740,7 +1742,7 @@ button {
 .own-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/own-bg.png");
   padding: 0 !important;
-  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 0 100%);
+  overflow: visible;
 }
 .own-section .income__content {
   padding: 12rem 0;
