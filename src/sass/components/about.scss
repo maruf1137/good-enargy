@@ -58,4 +58,83 @@
 	}
 }
 
-// "Barlow",Sans-serif
+.about2-section {
+	background-color: $color-white;
+	background-color: #fff;
+	padding-top: 15rem !important;
+
+	h3 {
+		color: $color-black;
+	}
+
+	.about2 {
+		&__item {
+			background-color: $color-black;
+			box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+			border-radius: 3px;
+		}
+
+		&__cover {
+			width: 100%;
+			height: 20rem;
+			border-radius: 3px 3px 0 0;
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				object-position: top center;
+				border-radius: 3px 3px 0 0;
+			}
+		}
+
+		&__profile {
+			height: 6rem;
+			width: 6rem;
+			position: absolute;
+			margin-top: -3rem;
+			margin-left: 1.5rem;
+
+			img {
+				height: 100%;
+				width: 100%;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: top center;
+			}
+		}
+
+		&__desc {
+			padding: 5rem 2rem 2rem 2rem;
+
+			h4 {
+				color: $color-white;
+				font-size: 3rem;
+				font-family: $font-tirtiary;
+				font-weight: 800;
+				line-height: 1.1em;
+				letter-spacing: -1.5px;
+			}
+
+			.text {
+				color: $color-white;
+				color: #b9b9b9;
+				font-size: 1.6rem;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.about2__btn {
+		.btn-more {
+			background-color: transparent;
+			border: 2px solid $color-black;
+			color: $color-black;
+			font-family: $font-tirtiary;
+			font-size: 3rem;
+			font-weight: 800;
+			letter-spacing: -1px;
+			text-transform: uppercase;
+		}
+	}
+}

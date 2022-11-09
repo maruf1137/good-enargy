@@ -1,8 +1,12 @@
 .footer {
 	// padding: 10rem 0;
 
+	&__top {
+		border-bottom: 1px dotted #9b9b9b;
+	}
+
 	&__logo {
-		width: 26rem;
+		width: 15rem;
 		height: auto;
 
 		img {
@@ -10,50 +14,50 @@
 		}
 	}
 
-	&__text {
-		font-size: 2rem;
+	&__link {
+		border-top: 2px solid transparent;
+		padding: 1rem 0;
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+		transition: all 0.3s;
+
+		&:hover {
+			border-top: 2px solid $color-secondary;
+			color: $color-secondary;
+		}
+	}
+
+	&__copyright {
+		padding-top: 4rem;
+	}
+
+	.social {
+		&__link {
+			height: 4.6rem;
+			width: 4.6rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $color-secondary;
+			border-radius: 50%;
+
+			i {
+				font-size: 2.4rem;
+				color: $color-white;
+			}
+			.bi {
+				height: auto;
+				width: auto;
+			}
+		}
+	}
+
+	.text {
+		color: #bfc0c0;
+		font-size: 1.5rem;
 		font-weight: 300;
-		max-width: 70rem;
-		margin: 0 auto;
-
-		@media only screen and (max-width: $tab-land) {
-			font-size: 1.4rem;
-		}
-	}
-
-	&__list {
-		.social__list {
-			gap: 4rem;
-		}
-		.social__link {
-			.icon {
-				height: 3.6rem;
-				width: 2rem;
-				margin-right: 0;
-			}
-		}
-
-		.btn {
-			color: #ffffff;
-			border: 1px solid #ffffff7d;
-
-			&:hover {
-				color: $color-black;
-				background-color: $color-white;
-			}
-		}
-	}
-
-	&__btns {
-		gap: 4rem;
-		a:link,
-		a:visited {
-			color: #ffffff;
-			transition: all 0.3s;
-
-			&:hover {
-				color: #ffffff;
-			}
-		}
+		letter-spacing: 0px;
 	}
 }

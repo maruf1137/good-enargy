@@ -1382,52 +1382,55 @@ button {
   background-color: #fff;
 }
 
+.footer__top {
+  border-bottom: 1px dotted #9b9b9b;
+}
 .footer__logo {
-  width: 26rem;
+  width: 15rem;
   height: auto;
 }
 .footer__logo img {
   height: 100%;
   width: 100%;
 }
-.footer__text {
-  font-size: 2rem;
-  font-weight: 300;
-  max-width: 70rem;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 62em) {
-  .footer__text {
-    font-size: 1.4rem;
-  }
-}
-.footer__list .social__list {
-  gap: 4rem;
-}
-.footer__list .social__link .icon {
-  height: 3.6rem;
-  width: 2rem;
-  margin-right: 0;
-}
-.footer__list .btn {
-  color: #ffffff;
-  border: 1px solid #ffffff7d;
-}
-.footer__list .btn:hover {
-  color: #000;
-  background-color: #fff;
-}
-.footer__btns {
-  gap: 4rem;
-}
-.footer__btns a:link,
-.footer__btns a:visited {
-  color: #ffffff;
+.footer__link {
+  border-top: 2px solid transparent;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0px;
   transition: all 0.3s;
 }
-.footer__btns a:link:hover,
-.footer__btns a:visited:hover {
-  color: #ffffff;
+.footer__link:hover {
+  border-top: 2px solid #d60700;
+  color: #d60700;
+}
+.footer__copyright {
+  padding-top: 4rem;
+}
+.footer .social__link {
+  height: 4.6rem;
+  width: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d60700;
+  border-radius: 50%;
+}
+.footer .social__link i {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.footer .social__link .bi {
+  height: auto;
+  width: auto;
+}
+.footer .text {
+  color: #bfc0c0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0px;
 }
 
 .header {
@@ -1588,6 +1591,73 @@ button {
   filter: brightness(100%) contrast(149%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 
+.about2-section {
+  background-color: #fff;
+  background-color: #fff;
+  padding-top: 15rem !important;
+}
+.about2-section h3 {
+  color: #000;
+}
+.about2-section .about2__item {
+  background-color: #000;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.about2-section .about2__cover {
+  width: 100%;
+  height: 20rem;
+  border-radius: 3px 3px 0 0;
+}
+.about2-section .about2__cover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 3px 3px 0 0;
+}
+.about2-section .about2__profile {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 1.5rem;
+}
+.about2-section .about2__profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+}
+.about2-section .about2__desc {
+  padding: 5rem 2rem 2rem 2rem;
+}
+.about2-section .about2__desc h4 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Futura Condensed PT", sans-serif;
+  font-weight: 800;
+  line-height: 1.1em;
+  letter-spacing: -1.5px;
+}
+.about2-section .about2__desc .text {
+  color: #fff;
+  color: #b9b9b9;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.about2-section .about2__btn .btn-more {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  font-family: "Futura Condensed PT", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
 .income-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.572)), url("../img/income-bg.png");
   background-position: center center;
@@ -1716,7 +1786,7 @@ button {
 
 .vlog-section {
   background-color: #fff;
-  padding-top: 15rem !important;
+  padding: 15rem 0 !important;
   clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
 }
@@ -1725,6 +1795,13 @@ button {
   width: 100%;
   max-width: 80rem;
   margin-left: -5rem;
+}
+@media only screen and (max-width: 62em) {
+  .vlog-section .vlog__img {
+    margin-left: 0;
+    max-width: 100% !important;
+    height: 38rem;
+  }
 }
 .vlog-section .vlog__img img {
   height: 100%;
@@ -1740,10 +1817,11 @@ button {
   color: #000;
 }
 .vlog-section .video-slider {
-  height: 23rem;
+  height: 25rem;
   max-width: 90rem;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 .vlog-section .video-slider .btn-video {
   height: 100%;
@@ -1762,27 +1840,55 @@ button {
   height: auto;
   width: auto;
 }
+.vlog-section .video-slider .btn-video iframe {
+  width: 100%;
+  height: 100%;
+}
 .vlog-section .video-slider .swiper-button-prev:after,
 .vlog-section .video-slider .swiper-button-next:after {
   display: none;
+}
+.vlog-section .video-slider .swiper-button-prev,
+.vlog-section .video-slider .swiper-rtl .swiper-button-next {
+  left: -32px;
+  right: auto;
+}
+@media only screen and (max-width: 35.9375em) {
+  .vlog-section .video-slider .swiper-button-prev,
+.vlog-section .video-slider .swiper-rtl .swiper-button-next {
+    left: 10px;
+  }
+}
+.vlog-section .video-slider .swiper-button-next,
+.vlog-section .video-slider .swiper-rtl .swiper-button-prev {
+  right: -32px;
+  left: auto;
+}
+@media only screen and (max-width: 35.9375em) {
+  .vlog-section .video-slider .swiper-button-next,
+.vlog-section .video-slider .swiper-rtl .swiper-button-prev {
+    right: 10px;
+  }
 }
 .vlog-section .video-slider .swiper-button-prev i,
 .vlog-section .video-slider .swiper-button-next i {
   color: #333;
 }
+@media only screen and (max-width: 35.9375em) {
+  .vlog-section .video-slider .swiper-button-prev i,
+.vlog-section .video-slider .swiper-button-next i {
+    color: #fff;
+  }
+}
 .vlog-section .video-slider .swiper-pagination-bullet-active {
   background: #000;
 }
 .vlog-section .video-slider .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  transform: translateY(1rem);
+  transform: translateY(2rem);
 }
 .vlog-section .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
+  height: 22rem;
 }
 .vlog-section .swiper-slide {
   background-position: center;
@@ -1798,8 +1904,11 @@ button {
 
 .social-section {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
+  margin-bottom: -10rem;
+  background-color: #000;
   position: relative;
   z-index: 2;
+  padding-bottom: 15rem !important;
 }
 .social-section .social .btn-youtube .social__nav {
   background-color: red;
@@ -1815,7 +1924,7 @@ button {
 }
 .social-section .social__item {
   background-color: #fff;
-  display: inline-block;
+  display: block;
   padding: 0;
 }
 .social-section .social__nav {

@@ -1,9 +1,10 @@
 .social-section {
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0% 50%);
-	// margin-bottom: -5rem;
-	// background-color: $color-black;
+	margin-bottom: -10rem;
+	background-color: #000;
 	position: relative;
 	z-index: 2;
+	padding-bottom: 15rem !important;
 
 	.social {
 		.btn-youtube {
@@ -29,7 +30,7 @@
 
 		&__item {
 			background-color: $color-white;
-			display: inline-block;
+			display: block;
 			padding: 0;
 		}
 
