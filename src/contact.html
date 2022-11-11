@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="fonts/stylesheet.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/contact.css" />
+		<!-- <link rel="stylesheet" href="css/contact.css" /> -->
 	</head>
 	<body class="contact-page">
 		<main class="main">
@@ -138,17 +138,69 @@
 								style="width: 100%; overflow-y: hidden"
 								class="wcustomhtml"
 							>
-								<iframe
-									class="webform-frame"
-									name="frame_webform"
-									id="frame_webform"
-									src="https://www.secureclientaccess.com/weblead/postcrc/NGY1NDQ5MzQ0ZTZhNGQzMDRkNTQ1NTdh/RmlsbCBvdXQgdGhpcyBmb3JtIGZvciBhIGZyZWUgY29uc3VsdGF0aW9u/en"
-									height="700"
-									width="713"
-									style="background: white"
-									frameborder="0"
-									__idm_id__="14426113"
-								></iframe>
+								<form action="#" method="POST" class="form">
+									<h4 class="heading mb-2">Fill out this form for a free consultation</h4>
+									<div class="form__radios d-flex align-items-center gap-4 mb-2">
+										<div class="d-flex gap-3">
+											<input type="radio" name="radio" id="contact" />
+											<label for="contact">I want to know more</label>
+										</div>
+										<div class="d-flex gap-3">
+											<input type="radio" name="radio" id="signup" />
+											<label for="signup"> I'm ready to sign up</label>
+										</div>
+									</div>
+
+									<div
+										class="d-flex justify-content-between align-items-center form__list gap-5 mb-2"
+									>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="first-name">first name <span class="star">*</span></label>
+											<input type="text" name="name" id="first-name" class="w-100" required />
+										</div>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="last-name">last name <span class="star">*</span></label>
+											<input type="text" name="name" id="last-name" class="w-100" required />
+										</div>
+									</div>
+
+									<div
+										class="d-flex justify-content-between align-items-center form__list gap-5 mb-2"
+									>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="Suffix">Suffix (Jr. Sr. etc)</label>
+											<input type="text" name="Suffix" id="Suffix" class="w-100" />
+										</div>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="email">email <span class="star">*</span></label>
+											<input type="text" name="email" id="email" class="w-100" required />
+										</div>
+									</div>
+
+									<div
+										class="d-flex justify-content-between align-items-center form__list gap-5 mb-2"
+									>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="phone-home">phone home</label>
+											<input type="number" name="phone-home" id="phone-home" class="w-100" />
+										</div>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="phone-work">phone work</label>
+											<input type="number" name="phone-work" id="phone-work" class="w-100" />
+										</div>
+									</div>
+
+									<div
+										class="d-flex justify-content-between align-items-center form__list gap-5 mb-4"
+									>
+										<div class="d-flex align-items-start gap-2 form__item flex-column w-100">
+											<label for="phone-mobile">phone mobile</label>
+											<input type="number" name="phone-mobile" id="phone-mobile" class="w-100" />
+										</div>
+									</div>
+
+									<button class="btn btn-submit" type="submit">Submit my information now</button>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -168,6 +220,20 @@
 			referrerpolicy="no-referrer"
 		></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- <script>
+			function sendMail() {
+				Email.send({
+					Host: 'smtp.elasticemail.com',
+					Username: 'username',
+					Password: 'password',
+					To: 'madrasasite06@gmail.com',
+					From: 'you@isp.com',
+					Subject: 'This is the subject',
+					Body: 'And this is the body',
+				}).then((message) => alert(message));
+			}
+		</script> -->
 		<script src="js/main.js"></script>
 	</body>
 </html>

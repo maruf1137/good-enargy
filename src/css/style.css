@@ -1953,5 +1953,28 @@ button {
   font-weight: 400;
   line-height: 1.68421;
 }
+.contact-page {
+  background-color: #fff;
+  padding-bottom: 8rem;
+}
+.contact-page .form {
+  max-width: 66rem;
+  padding: 4rem 0;
+}
+.contact-page .form h4 {
+  font-size: 1.5em;
+  color: #000;
+  text-align: left;
+}
+.contact-page .form label {
+  color: #000;
+  font-size: 1.4rem;
+}
+.contact-page .form__item .star {
+  color: red;
+}
+.contact-page .form .btn {
+  background-color: #0c7ef0;
+}
 
 /*# sourceMappingURL=style.css.map */

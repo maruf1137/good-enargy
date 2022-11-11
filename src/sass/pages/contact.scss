@@ -1,0 +1,44 @@
+.contact-page {
+	background-color: $color-white;
+	padding-bottom: 8rem;
+	.form {
+		max-width: 66rem;
+		padding: 4rem 0;
+
+		h4 {
+			font-size: 1.5em;
+			color: $color-black;
+			text-align: left;
+		}
+
+		&__radios {
+			label {
+			}
+		}
+		label {
+			color: $color-black;
+			font-size: 1.4rem;
+		}
+
+		&__list {
+		}
+
+		&__item {
+			// label {
+			// 	color: $color-black;
+			// }
+
+			// input {
+			// 	color: $color-black;
+			// }
+
+			.star {
+				color: red;
+			}
+		}
+
+		.btn {
+			background-color: #0c7ef0;
+		}
+	}
+}
