@@ -1559,6 +1559,8 @@ button {
 }
 .about-section .about__content {
   text-align: right;
+  max-width: 80rem;
+  margin-left: auto;
 }
 @media only screen and (max-width: 62em) {
   .about-section .about__content {
